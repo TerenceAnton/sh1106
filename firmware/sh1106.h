@@ -9,7 +9,7 @@
 #ifndef _sh1106_h
 #define _sh1106_h
 
-#include "application.h"
+#include "Particle.h"
 
 #define SH1106_ADDR1 0x3C // write data
 #define SH1106_ADDR2 0x3D // read data

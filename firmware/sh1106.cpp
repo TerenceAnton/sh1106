@@ -10,7 +10,7 @@
 // Pull in the wire library to communicate with the LCD over I2C
 //#include <Wire.h>
 
-#include "application.h"
+#include "Particle.h"
 
 #include "sh1106.h"
 
@@ -535,13 +535,11 @@ void sh1106_lcd::DrawLine(byte x1, byte y1, byte x2, byte y2)
 void sh1106_lcd::Print(char *data)
 {
     PrintData(data, false);
-    Show();
 }
 
 void sh1106_lcd::PrintLine(char *data)
 {
     PrintData(data, true);
-    Show();
 }
 
 void sh1106_lcd::PrintData(char *data, bool incrementLine)
