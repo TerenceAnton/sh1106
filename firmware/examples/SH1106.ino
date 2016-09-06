@@ -59,6 +59,7 @@ void loop()
     glcd->PrintLine("RSTUVWXYZ[\ ]^_`");
     glcd->PrintLine("abcdefghijklmnopq");
     glcd->PrintLine("rstuvwxyz{|}~ Fin");
+    glcd->Show();
     delay(5000);
     glcd->ClearScreen();
 
